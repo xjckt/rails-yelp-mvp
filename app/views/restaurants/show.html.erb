@@ -1,0 +1,15 @@
+<h1><%= @restaurant.name %></h1>
+
+<div>
+  <p><%= @restaurant.address %></p>
+  <p><%= @restaurant.phone_number %></p>
+  <p><%= @restaurant.category.capitalize %></p>
+</div>
+
+
+<%= link_to "Back to list", restaurants_path %>
+
+<%# <%= link_to "Delete",
+  restaurant_path(@restaurant),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+<%# %>
